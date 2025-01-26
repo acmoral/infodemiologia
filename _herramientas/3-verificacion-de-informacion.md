@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Verificadores de información - Fact checkers
+title: Estrategias para verificadores de información - Fact checkers
 permalink: /page/single.html
 key: page-single
 cover: /assets/images/cover1.jpg
