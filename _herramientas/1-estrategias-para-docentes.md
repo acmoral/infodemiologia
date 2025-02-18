@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Estrategias para docentes
-permalink: /page/single.html
+permalink: /herramientas/estrategias-para-docentes.html
 key: page-single
 cover: /assets/images/cover1.jpg
 tags: 

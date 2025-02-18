@@ -15,6 +15,7 @@ function smoothScrollTo(element, target, duration) {
 
   requestAnimationFrame(animateScroll);  // Start the animation
 }
+
 document.addEventListener('DOMContentLoaded', function() {
     var buttons = document.querySelectorAll('.timeline-item__icon--clickable');
     buttons.forEach(function(button) {
@@ -50,4 +51,47 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     });
+
+    if (!window.filterInitialized) {
+      window.filterInitialized = true;
+      var filterButtons = document.querySelectorAll('.filter-button');
+      
+      filterButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          var filterValue = this.getAttribute('data-filter');
+          var timelineItems = document.querySelectorAll('.timeline-item');
+          timelineItems.forEach(function(item) {
+            // first hide them all
+            item.classList.add('timeline-item--hidden');
+            // then show the ones that match the filter
+          if (item.getAttribute('data-category').toLowerCase() === filterValue) {
+              item.classList.remove('timeline-item--hidden');
+            }
+            
+          });
+
+           // check for every ul with class timeline-items-list if all the elements are hidden hide the sibling h2
+            var timelineLists = document.querySelectorAll('.timeline-items-list');
+            timelineLists.forEach(function(list) {
+              var items = list.querySelectorAll('.timeline-item');
+              var allHidden = true;
+              items.forEach(function(item) {
+                if (!item.classList.contains('timeline-item--hidden')) {
+                  allHidden = false;
+                }
+              });
+              if (allHidden) {
+                // hide sibling h2
+                var sibling = list.previousElementSibling;
+                sibling.classList.add('timeline-item--hidden');
+              } else {
+                // show sibling h2
+                var sibling = list.previousElementSibling;
+                sibling.classList.remove('timeline-item--hidden');
+              }
+            });
+        }); 
+      });
+    }
+
   });

@@ -12,7 +12,7 @@
 {%- if include.reverse -%}
   {%- assign _sorted_list = _sorted_list | reverse -%}
 {%- endif -%}
-
+{%- assign filter_type = 'not-filtered' -%}
 {%- if include.type == 'item' -%}
 <div class="article-list items items--divided">
 {%- elsif include.type == 'brief' -%}
@@ -24,6 +24,17 @@
   <div class="article-list grid grid--p-3">
   {%- endif -%}
 {%- elsif include.type == 'timeline' -%}
+<div class="timeline-filter">
+  <h2> Filtro</h2>
+  <div class="timeline-filter-buttons" >
+    <ul class="filter-buttons-list">
+      <li class="filter-button" data-filter="efectividad"> <button class="filter-icon"  style="background-color: greenyellow"> <i class="fas fa-star" style="color:white;"></i> </button> Efectividad </li>
+      <li class="filter-button" data-filter="seguridad"> <button class="filter-icon"  style="background-color: coral"> <i class="fas fa-star" style="color:white;"></i> </button> Seguridad</li>
+      <li class="filter-button"  data-filter="refuerzos"> <button class="filter-icon" style="background-color: crimson"> <i class="fas fa-star" style="color:white;"></i> </button> Refuerzos </li>
+      <li class="filter-button" data-filter="variantes" > <button class="filter-icon" style="background-color: blueviolet"> <i class="fas fa-star" style="color:white;"></i> </button> Variantes</li>
+    </ul>
+  </div>
+</div>
 <div class="article-list timeline-items">
 {%- assign _date = '' -%}
 {%- endif -%}
@@ -150,19 +161,19 @@
         {%- assign _date = _currentdate -%}
       {%- endif -%}
       {%-  if _article.category == 'Efectividad'-%}
-      {%- assign _color = 'color:greenyellow' -%}
-      {%- assign _background_color = 'background-color:greenyellow' -%}
-    {%- elsif _article.category == 'Seguridad'-%}
-      {%- assign _color = 'color:coral' -%}
-      {%- assign _background_color = 'background-color:coral' -%}
-    {%- elsif _article.category == 'Refuerzos'-%}
-      {%- assign _color = 'color:crimson' -%  }
-      {%- assign _background_color = 'color:crimson' -%}
-    {%- elsif _article.category == 'Variantes'-%}
-      {%- assign _color = 'color:blueviolet' -%}
-      {%- assign _background_color = 'background-color:blueviolet' -%}
+        {%- assign _color = 'color:greenyellow' -%}
+        {%- assign _background_color = 'background-color:greenyellow' -%}
+      {%- elsif _article.category == 'Seguridad'-%}
+        {%- assign _color = 'color:coral' -%}
+        {%- assign _background_color = 'background-color:coral' -%}
+      {%- elsif _article.category == 'Refuerzos'-%}
+        {%- assign _color = 'color:crimson' -%}
+        {%- assign _background_color = 'background-color:crimson' -%}
+      {%- elsif _article.category == 'Variantes'-%}
+        {%- assign _color = 'color:blueviolet' -%}
+        {%- assign _background_color = 'background-color:blueviolet' -%}
     {%- endif -%}
-    <li class=" timeline-item">
+    <li class=" timeline-item"  data-category="{{_article.category}}">
       <div class="timeline-item__icon--clickable" style="{{_background_color}}" >
         <i class="fas fa-star" style="color:white;"></i>
       </div>
@@ -189,4 +200,5 @@
   {%- endfor -%}
 <script>
   {%- include scripts/components/timeline.js -%}
+  
 </script>
