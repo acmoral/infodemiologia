@@ -25,9 +25,20 @@
   {%- endif -%}
 {%- elsif include.type == 'timeline' -%}
 <div class="timeline-filter">
-  <h2> Filtro</h2>
+  <div class="button-container-left">
+    <button class="scroll-btn" onclick="scrollTimeline(-200)">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="button-container-right">
+    <button class="scroll-btn" onclick="scrollTimeline(200)">
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </button>
+  </div>
+  <h2> Filtrar por tipo</h2>
   <div class="timeline-filter-buttons" >
     <ul class="filter-buttons-list">
+      <li class="filter-button" data-filter="none"><button class="filter-icon"  style="background-color: grey"> <i class="fa fa-times"  style="color:white;"></i> </button> Sin filtro </li>
       <li class="filter-button" data-filter="efectividad"> <button class="filter-icon"  style="background-color: greenyellow"> <i class="fas fa-star" style="color:white;"></i> </button> Efectividad </li>
       <li class="filter-button" data-filter="seguridad"> <button class="filter-icon"  style="background-color: coral"> <i class="fas fa-star" style="color:white;"></i> </button> Seguridad</li>
       <li class="filter-button"  data-filter="refuerzos"> <button class="filter-icon" style="background-color: crimson"> <i class="fas fa-star" style="color:white;"></i> </button> Refuerzos </li>
@@ -35,10 +46,11 @@
     </ul>
   </div>
 </div>
-<div class="article-list timeline-items">
+<div class="article-list timeline-items" id="timelineContainer">
+{%- endif -%}
+{%- if include.group_by == 'year' -%}
 {%- assign _date = '' -%}
 {%- endif -%}
-
   {%- for _article in _sorted_list -%}
 
     {%- include snippets/prepend-baseurl.html path=_article.url -%}
@@ -157,7 +169,8 @@
     {%- assign _currentmonthday = _article.date | date: '%m-%d' -%}
       {%- if _currentdate != _date -%}
         {%- unless forloop.first -%}</ul></section>{%- endunless -%}
-        <section class="timeline-span"><h2 class="timeline-article-list__group-header">{{ _currentdate }}</h2><ul class="timeline-items-list">
+        <section class="timeline-span">
+          <h2 class="timeline-article-list__group-header">{{ _currentdate }}</h2><ul class="timeline-items-list">
         {%- assign _date = _currentdate -%}
       {%- endif -%}
       {%-  if _article.category == 'Efectividad'-%}
@@ -196,9 +209,13 @@
       </div>
     </div>  
   </li>
+  
     {%- endif -%}
   {%- endfor -%}
 <script>
   {%- include scripts/components/timeline.js -%}
-  
+  function scrollTimeline(amount) {
+    const container = document.getElementById("timelineContainer");
+    container.scrollBy({ left: amount, behavior: "smooth" });
+  }
 </script>

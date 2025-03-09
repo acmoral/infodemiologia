@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
           lineInsideLine.style.height = distance + 'px';
           lineInsideLine.style.top = -distance + 'px';
           smoothScrollTo(description, 160, 500); //moves the card to focus in header instead of image
-        } else {
+        } 
+        else {
           content.classList.add('timeline-item-hidden');
           timelineTag.classList.add('timeline__tag--hidden');
           var parentDiv  = content.parentElement;
@@ -66,8 +67,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // then show the ones that match the filter
           if (item.getAttribute('data-category').toLowerCase() === filterValue) {
               item.classList.remove('timeline-item--hidden');
-            }
-            
+            }else if (filterValue === 'none') {
+              item.classList.remove('timeline-item--hidden');
+            }            
           });
 
            // check for every ul with class timeline-items-list if all the elements are hidden hide the sibling h2
