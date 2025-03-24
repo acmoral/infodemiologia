@@ -1,22 +1,22 @@
 ---
 layout: article
-title: Post 8
-permalink: /page/article-header-overlay-background-image-header-background.html
-key: page-article-header-overlay-background-image-HB
+title: Localidades
+permalink: /blog/localidades
+key: page-article-header-overlay-background-image-ITH
 cover:  /assets/images/cover3.jpg
+mode: immersive
 header:
   theme: dark
-  background: 'linear-gradient(135deg, rgb(34, 139, 87), rgb(139, 34, 139))'
 article_header:
   type: overlay
   theme: dark
   background_color: '#203028'
   background_image:
-    gradient: 'linear-gradient(135deg, rgba(34, 139, 87, .4), rgba(139, 34, 139, .4))'
+    gradient: 'linear-gradient(135deg, rgba(34, 139,87 , .4), rgba(139, 34, 139, .4))'
     src: /docs/assets/images/cover3.jpg
 ---
 
-A post has an article header overlay with a background image width customized header background.
+A post has an article header overlay with a background image in immersive mode with a translucent header.
 
 <!--more-->
 
@@ -30,10 +30,10 @@ A post has an article header overlay with a background image width customized he
 
     ---
     layout: article
-    title: Page - Article Header Overlay Background Image (Customized Header Background)
+    title: Page - Article Header Overlay Background Image (Immersive + Translucent Header)
+    mode: immersive
     header:
       theme: dark
-      background: 'linear-gradient(135deg, rgb(34, 139, 87), rgb(139, 34, 139))'
     article_header:
       type: overlay
       theme: dark

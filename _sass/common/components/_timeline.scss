@@ -94,6 +94,10 @@ a > .timeline-item__header, a.timeline-item__header, .timeline-item__header > a 
   border-radius: 5px;
   font-size:30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  &:active {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
 }
 
 .scroll-btn:hover {
@@ -181,8 +185,8 @@ a > .timeline-item__header, a.timeline-item__header, .timeline-item__header > a 
     display: none;
   }
   width: 25vw;
-  max-height: 350px;
-  height: 50vh;
+  max-height: 300px;
+  height: 40vh;
   overflow: auto;
   display : flex;
   flex-direction: column;

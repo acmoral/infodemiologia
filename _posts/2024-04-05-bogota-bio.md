@@ -1,7 +1,7 @@
 ---
 layout: article
-title: Post 12
-permalink: /page/article-header-cover-image.html
+title: Gráfico de Sankey Infodemia
+permalink: /blog/grafico-sankey-infodemia
 key: page-article-header-cover-image
 cover:  /assets/images/cover3.jpg
 article_header:

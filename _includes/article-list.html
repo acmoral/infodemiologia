@@ -39,10 +39,10 @@
   <div class="timeline-filter-buttons" >
     <ul class="filter-buttons-list">
       <li class="filter-button" data-filter="none"><button class="filter-icon"  style="background-color: grey"> <i class="fa fa-times"  style="color:white;"></i> </button> Sin filtro </li>
-      <li class="filter-button" data-filter="efectividad"> <button class="filter-icon"  style="background-color: greenyellow"> <i class="fas fa-star" style="color:white;"></i> </button> Efectividad </li>
-      <li class="filter-button" data-filter="seguridad"> <button class="filter-icon"  style="background-color: coral"> <i class="fas fa-star" style="color:white;"></i> </button> Seguridad</li>
-      <li class="filter-button"  data-filter="refuerzos"> <button class="filter-icon" style="background-color: crimson"> <i class="fas fa-star" style="color:white;"></i> </button> Refuerzos </li>
-      <li class="filter-button" data-filter="variantes" > <button class="filter-icon" style="background-color: blueviolet"> <i class="fas fa-star" style="color:white;"></i> </button> Variantes</li>
+      <li class="filter-button" data-filter="efectividad"> <button class="filter-icon"  style="background-color: #e30614 "> <i class="fas fa-star" style="color:white;"></i> </button> Efectividad </li>
+      <li class="filter-button" data-filter="seguridad"> <button class="filter-icon"  style="background-color:  #8faad9 "> <i class="fas fa-star" style="color:white;"></i> </button> Seguridad</li>
+      <li class="filter-button"  data-filter="refuerzos"> <button class="filter-icon" style="background-color:  #1cf9eb "> <i class="fas fa-star" style="color:white;"></i> </button> Refuerzos </li>
+      <li class="filter-button" data-filter="variantes" > <button class="filter-icon" style="background-color: #1f3864 "> <i class="fas fa-star" style="color:white;"></i> </button> Variantes</li>
     </ul>
   </div>
 </div>
@@ -174,17 +174,17 @@
         {%- assign _date = _currentdate -%}
       {%- endif -%}
       {%-  if _article.category == 'Efectividad'-%}
-        {%- assign _color = 'color:greenyellow' -%}
-        {%- assign _background_color = 'background-color:greenyellow' -%}
+        {%- assign _color = 'color:#e30614' -%}
+        {%- assign _background_color = 'background-color:#e30614' -%}
       {%- elsif _article.category == 'Seguridad'-%}
-        {%- assign _color = 'color:coral' -%}
-        {%- assign _background_color = 'background-color:coral' -%}
+        {%- assign _color = 'color: #8faad9' -%}
+        {%- assign _background_color = 'background-color: #8faad9' -%}
       {%- elsif _article.category == 'Refuerzos'-%}
-        {%- assign _color = 'color:crimson' -%}
-        {%- assign _background_color = 'background-color:crimson' -%}
+        {%- assign _color = 'color: #1cf9eb' -%}
+        {%- assign _background_color = 'background-color:#1cf9eb' -%}
       {%- elsif _article.category == 'Variantes'-%}
-        {%- assign _color = 'color:blueviolet' -%}
-        {%- assign _background_color = 'background-color:blueviolet' -%}
+        {%- assign _color = 'color:#1f3864' -%}
+        {%- assign _background_color = 'background-color:#1f3864' -%}
     {%- endif -%}
     <li class=" timeline-item"  data-category="{{_article.category}}">
       <div class="timeline-item__icon--clickable" style="{{_background_color}}" >
@@ -193,7 +193,13 @@
       <div class="line"><div class="vertical-line"></div></div>
       <div class="specific-date">{{_currentmonthday}}</div>
       <div class="card card--flat timeline-item__description">
-      <div class="timeline__tag timeline__tag--hidden" style="{{_background_color}}"><h1>{{_article.category}}</h1></div>
+      <div class="timeline__tag timeline__tag--hidden" style="{{_background_color}}">
+        {%- if _article.category =='Variantes' -%}
+          <h1 style="color:white">{{_article.category}}</h1>
+        {%- else -%}
+          <h1 style="color:black">{{_article.category}}</h1>
+        {%- endif -%}
+      </div>
       <div class="card__content timeline-item-hidden">
         {%- if _article.cover -%}
           <img class="timeline-item__image img" src="{{ _article_cover }}" />
