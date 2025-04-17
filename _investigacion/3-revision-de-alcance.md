@@ -28,8 +28,12 @@ article_header:
   }
 </style>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+## Estudio de síntesis de conocimiento o estudio documental/sistemático de la literatura: revisión de alcance
+Esta iniciativa se concentra en investigar el diseño, la implementación y el seguimiento de las herramientas de investigación-acción, existentes en la literatura científica, sobre gestión de información en internet relacionada con la vacunación contra la COVID 19. Se exploran conceptos como infodemia, desinformación, fake news, malinformación e información errónea, con el objetivo de comprender y explicar cómo circula la información y cómo afecta la toma de decisiones.
+Comprendemos que hay diversas metodologías para identificar y mitigar la infodemia relacionada con la vacunación de COVID-19, sin embargo, existen vacíos de información respecto a su caracterización por público objetivo, clasificación, contexto geográfico, cultural y político en el que se desarrollaron, resultados y si fueron o no sometidas a un proceso de validación. Identificar las metodologías más adecuadas puede contribuir con estrategias para mejorar los procesos de comunicación y dar cumplimiento a los objetivos de vacunación.
+El objetivo de esta línea de trabajo fue encontrar los diferentes métodos que existen para identificar y para mitigar el efecto y circulación de la infodemia en el contexto de las vacunas de COVID-19.
+El protocolo se puede consultar en el siguiente [enlace](https://osf.io/67qh9).
+La matriz de extracción se puede consultar en el siguiente [enlace](https://docs.google.com/spreadsheets/d/1dwEaQLVUVXVAI3EJtTD5qvgNn9z7tdPD/edit?usp=sharing&ouid=118396279039795313756&rtpof=true&sd=true)
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris
+[Artículo para blog: Acotando la infodemia en medio de la infodemia: Los retos metodológicos de una revisión de alcance.]({{ site.url }}/infodemiologia/blog/bogota-bio)

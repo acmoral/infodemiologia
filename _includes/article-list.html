@@ -43,6 +43,7 @@
       <li class="filter-button" data-filter="seguridad"> <button class="filter-icon"  style="background-color:  #8faad9 "> <i class="fas fa-star" style="color:white;"></i> </button> Seguridad</li>
       <li class="filter-button"  data-filter="refuerzos"> <button class="filter-icon" style="background-color:  #1cf9eb "> <i class="fas fa-star" style="color:white;"></i> </button> Refuerzos </li>
       <li class="filter-button" data-filter="variantes" > <button class="filter-icon" style="background-color: #1f3864 "> <i class="fas fa-star" style="color:white;"></i> </button> Variantes</li>
+      <li class="filter-button" data-filter="pnv" > <button class="filter-icon" style="background-color:  #e4c08e  "> <i class="fas fa-star" style="color:white;"></i> </button> Plan Nacional de Vacunación</li>
     </ul>
   </div>
 </div>
@@ -185,6 +186,10 @@
       {%- elsif _article.category == 'Variantes'-%}
         {%- assign _color = 'color:#1f3864' -%}
         {%- assign _background_color = 'background-color:#1f3864' -%}
+        {%- elsif _article.category == 'PNV'-%}
+        {%- assign _color = 'color:#e4c08e' -%}
+        {%- assign _background_color = 'background-color:#e4c08e' -%}
+        
     {%- endif -%}
     <li class=" timeline-item"  data-category="{{_article.category}}">
       <div class="timeline-item__icon--clickable" style="{{_background_color}}" >
