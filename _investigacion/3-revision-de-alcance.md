@@ -2,8 +2,7 @@
 layout: article
 title: Revisión de alcance
 permalink: /page/revision-alcance.html
-key: page-article-header-overlay-background-image-HB
-cover: /assets/images/cover3.jpg
+cover: /assets/images/revision.jpg
 tags : 
     - revisión de alcance
 excerpt : La organización se encarga de ..
@@ -16,7 +15,7 @@ article_header:
   background_color: '#203028'
   background_image:
     gradient: 'linear-gradient(135deg, rgba(47,84,151, .4), rgba(143,170,217, .4))'
-    src: /assets/images/cover3.jpg
+    src: /assets/images/revision.jpg
 ---
 
 
@@ -36,4 +35,4 @@ El protocolo se puede consultar en el siguiente [enlace](https://osf.io/67qh9).
 La matriz de extracción se puede consultar en el siguiente [enlace](https://docs.google.com/spreadsheets/d/1dwEaQLVUVXVAI3EJtTD5qvgNn9z7tdPD/edit?usp=sharing&ouid=118396279039795313756&rtpof=true&sd=true)
 
 
-[Artículo para blog: Acotando la infodemia en medio de la infodemia: Los retos metodológicos de una revisión de alcance.]({{ site.url }}/infodemiologia/blog/bogota-bio)
+[Artículo para blog: Acotando la infodemia en medio de la infodemia: Los retos metodológicos de una revisión de alcance.]({{ site.url }}/infodemiologia/blog/acotando-infodemia)

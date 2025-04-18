@@ -1,14 +1,39 @@
 /**
  * Site Info
  */
-
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 150px;
+  margin-bottom: map-get($spacers, 2);
+  text-align: center;
+  @include overflow(auto);
+  .logo {
+    img {
+      text-align: center;
+      max-width: 100%;
+      height: auto;
+      &:hover {
+        background-color: rgba($main-color-1, 0.05);
+        color: $footer-text-color;
+        border-radius: 10%;
+      }
+    }
+  }
+}
 .footer {
-  @include flexbox();
-  @include align-items(center);
   color: $footer-text-color;
   background: $footer-background;
   a {
     @include link-colors ($footer-text-color, $main-color-1);
+  }
+  .main{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: map-get($spacers, 2) map-get($spacers, 3);
   }
   .site-info {
     font-size: map-get($base, font-size-xs);
@@ -29,5 +54,22 @@
   @include overflow(auto);
   .author-links {
     text-align: center;
+  }
+}
+
+.footer__social-icons {
+  text-align: center;
+  @include overflow(auto);
+  a{
+    display: inline-block;
+    margin: 0 map-get($spacers, 1);
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: $footer-text-color;
+      &:hover {
+        fill: $main-color-1;
+      }
+    }
   }
 }
