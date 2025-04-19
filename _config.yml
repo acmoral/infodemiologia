@@ -245,3 +245,7 @@ collections:
   investigacion:
     output: true
     permalink: /investigacion/:title
+  cartillas:
+    output: true
+    permalink: /cartillas/:title
+

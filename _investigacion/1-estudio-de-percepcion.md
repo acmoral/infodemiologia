@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Estudio de percepción
+title: Estudio de percepción, grupos focales
 permalink: /page/estudio-de-percepcion.html
 key: page-article-header-overlay-background-image-HB
 cover: /assets/images/estudio-percepcion.jpg
@@ -28,7 +28,6 @@ article_header:
   }
 </style>
 
-# Línea Etnografía clásica: Percepciones en Bogotá
 Esta línea de trabajo investiga las actitudes colectivas; normas e instituciones sociales; racionalidades, imaginarios y percepciones alrededor de identidades sociales relacionadas con la vacunación COVID 19.
 
 Para el desarrollo de esta fase se decidió la aplicación de grupos focales,  para orientar la convocatoria se llevó a cabo la caracterización de las dinámicas de transferencia de la información (objetivo 1 del proyecto) para ello se hizo la construcción de un perfil descriptivo de las localidades de Bogotá a partir de los datos de la Encuesta Multipropósito 2021 aplicada por la Secretaría Distrital de Planeación (SDP), en convenio con el Departamento Administrativo Nacional de Estadística (DANE) y del Observatorio de Salud de Bogotá (SaluData). [Este perfil constó de una descripción](https://drive.google.com/file/d/1YevL-FOXLq5GdVfmWgYe2fYJqwHOgO_L/view?usp=sharing) de variables epidemiológicas, sociodemográficas y de uso de medios y de tecnologías de información y comunicación.  A partir de los hallazgos tras la elaboración del perfil descriptivo se orientan las fases de estudio de percepciones y se garantiza el enfoque diferencial descrito en la propuesta.

@@ -1,9 +1,12 @@
 ---
-layout: article
+layout: articles
 title: Estrategias para periodistas
 permalink: /herramientas/estrategias-para-periodistas.html
 key: page-single
 cover: /assets/images/estrategias-periodistas.jpg
+articles:
+  data_source: site.cartillas
+  type: grid
 tags: 
     [Estrategias,
     Periodistas]
@@ -28,10 +31,6 @@ Esta caja de herramientas para periodistas tiene el objetivo principal de ser un
 - Combatir el fenómeno de la información problemática en entornos digitales: desarrollar estrategias para identificar y contrarrestar la desinformación en plataformas digitales, mediante el uso de herramientas tecnológicas, la creación de contenidos atractivos y verificados, y la participación en comunidades digitales para promover narrativas basadas en hechos
 - Adaptarse a contextos locales y necesidades específicas: fomentar la adaptación de estrategias contra la desinformación a contextos locales y necesidades específicas, proporcionando recursos ajustados a las realidades culturales, políticas y sociales de las localidades de Bogotá y otras regiones. Esto permitirá abordar problemáticas particulares, como la desinformación sobre vacunas en comunidades vulnerables y la difusión de mitos en entornos rurales.
 Herramientas
-## Guías 
-- [GUÍA PRÁCTICA PARA IDENTIFICAR Y VERIFICAR INFORMACIÓN PROBLEMÁTICA](https://docs.google.com/document/d/1QfwD4fyryE6LVQlbgaCd0s2oBh3SKsXn/edit?usp=drive_link&ouid=118396279039795313756&rtpof=true&sd=true)
-- [GUÍA INTEGRAL PARA EL CUBRIMIENTO PERIODÍSTICO EN TEMAS DE SALUD PARA PRINCIPIANTES](https://docs.google.com/document/d/160luJGjFMbA1DaN9wzBOuCwP-osnIvnc/edit?usp=drive_link&ouid=118396279039795313756&rtpof=true&sd=true)
-- [GUÍA PARA LA COMUNICACIÓN DE RIESGO EN SALUD](https://docs.google.com/document/d/1CMdKnSjNeFf3jpS5harZ_7PKs25BQyVa/edit?usp=drive_link&ouid=118396279039795313756&rtpof=true&sd=true)
 
 
 
